@@ -1,0 +1,27 @@
+{
+  "name": "jumbo.cl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dist": "pnpm clean && tsc",
+    "dev": "npx ts-node src/jumbo.cl-axios",
+    "start": "pnpm dist && node dist/jumbo.cl-axios"
+  },
+  "keywords": [],
+  "author": "RL_Freddy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^20.2.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "minimist": "^1.2.8"
+  }
+}
